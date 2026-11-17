@@ -1,5 +1,15 @@
 const EXT = globalThis.browser ?? globalThis.chrome;
-const DEFAULTS = { enabled: true, gainDb: 100, loudness: 10, thresholdDb: 0, ratio: 20, lowShelfDb: 12, presenceDb: 12, highShelfDb: 10, drive: 1.0 };
+const DEFAULTS = { 
+  enabled: true, 
+  gainDb: 1000,      // আপনার দেওয়া মান
+  loudness: 100,     // আপনার দেওয়া মান
+  thresholdDb: 0, 
+  ratio: 20, 
+  lowShelfDb: 12, 
+  presenceDb: 12, 
+  highShelfDb: 10, 
+  drive: 1.0 
+};
 const keys = Object.keys(DEFAULTS);
 
 function getStorage() {
