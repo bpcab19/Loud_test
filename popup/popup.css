@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  width: 280px;
+  background: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  padding: 12px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+h2 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  color: #ffcc00;
+  text-align: center;
+}
+.row, .control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+label {
+  font-size: 12px;
+  color: #bbb;
+}
+input[type="range"] {
+  width: 100%;
+  accent-color: #ffcc00;
+}
+.status {
+  font-size: 11px;
+  text-align: center;
+  color: #ff5555;
+  margin-top: 4px;
+}
