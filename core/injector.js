@@ -4,8 +4,8 @@
 
   const DEFAULTS = {
     enabled: true,
-    gainDb: 100,
-    loudness: 10,
+    gainDb: 1000,
+    loudness: 100,
     thresholdDb: 0,
     ratio: 20,
     lowShelfDb: 12,
