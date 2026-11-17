@@ -13,12 +13,14 @@
       <input id="enabled" type="checkbox" checked>
     </div>
     <div class="control">
-      <label>Mic Gain (dB): <span id="gainDbVal">100</span></label>
-      <input id="gainDb" type="range" min="0" max="200" value="100">
+      <label>Mic Gain (dB): <span id="gainDbVal">1000</span></label>
+      <!-- এখানে max="2000" করে দেওয়া হয়েছে যাতে ১০০০ পর্যন্ত সিলেক্ট করা যায় -->
+      <input id="gainDb" type="range" min="0" max="2000" value="1000">
     </div>
     <div class="control">
-      <label>Loudness Boost: <span id="loudnessVal">10</span></label>
-      <input id="loudness" type="range" min="1" max="50" step="0.5" value="10">
+      <label>Loudness Boost: <span id="loudnessVal">100</span></label>
+      <!-- এখানে max="500" করে দেওয়া হয়েছে যাতে ১০০ পর্যন্ত সিলেক্ট করা যায় -->
+      <input id="loudness" type="range" min="1" max="500" step="5" value="100">
     </div>
     <div class="control">
       <label>Low Bass: <span id="lowShelfDbVal">12</span></label>
@@ -28,7 +30,7 @@
       <label>Voice Presence (Mid): <span id="presenceDbVal">12</span></label>
       <input id="presenceDb" type="range" min="-20" max="30" value="12">
     </div>
-    <div id="status" class="status">Ready (Uncapped)</div>
+    <div id="status" class="status">Ultra Mode Active</div>
   </div>
   <script src="popup.js"></script>
 </body>
