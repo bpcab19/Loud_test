@@ -1,16 +1,17 @@
 {
   "manifest_version": 2,
-  "name": "Custom Voice Booster",
+  "name": "Facebook & WhatsApp Voice Booster",
   "short_name": "VoiceBooster",
   "version": "1.0.0",
-  "description": "Microphone audio boost and equalizer for Facebook and Messenger web calls.",
+  "description": "Microphone audio boost and equalizer for Facebook, Messenger, and WhatsApp web calls.",
   "permissions": [
     "storage",
     "tabs",
     "https://facebook.com/*",
     "https://*.facebook.com/*",
     "https://messenger.com/*",
-    "https://*.messenger.com/*"
+    "https://*.messenger.com/*",
+    "https://web.whatsapp.com/*"
   ],
   "background": {
     "scripts": [
@@ -24,7 +25,8 @@
         "https://facebook.com/*",
         "https://*.facebook.com/*",
         "https://messenger.com/*",
-        "https://*.messenger.com/*"
+        "https://*.messenger.com/*",
+        "https://web.whatsapp.com/*"
       ],
       "js": [
         "core/loader.js",
