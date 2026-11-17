@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "name": "Custom Voice Booster",
+  "short_name": "VoiceBooster",
+  "version": "1.0.0",
+  "description": "Microphone audio boost and equalizer for Facebook and Messenger web calls.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "https://facebook.com/*",
+    "https://*.facebook.com/*",
+    "https://messenger.com/*",
+    "https://*.messenger.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://facebook.com/*",
+        "https://*.facebook.com/*",
+        "https://messenger.com/*",
+        "https://*.messenger.com/*"
+      ],
+      "js": [
+        "core/loader.js",
+        "core/service.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "web_accessible_resources": [
+    "core/injector.js"
+  ],
+  "browser_action": {
+    "default_title": "Voice Booster",
+    "default_popup": "popup/popup.html"
+  }
+}
